@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { ChevronLeft, Camera } from 'lucide-react'
+import { MediaPicker } from '@/components/MediaPicker'
 
 export default function NewMemory() {
   return (
@@ -35,7 +36,7 @@ export default function NewMemory() {
             Tornar memória pública
           </label>
         </div>
-        <input type="file" id="media" className="invisible h-0 w-0" />
+        <MediaPicker />
 
         <textarea
           name="content"
